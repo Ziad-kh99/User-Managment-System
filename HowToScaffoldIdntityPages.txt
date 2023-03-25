@@ -1,0 +1,54 @@
+
+//> dotnet aspnet=codegenerator identity -dc UserManagementWithIdentity.Data.ApplicationDbContext 
+            --files ""
+
+Generator Options:
+  --dbContext|-dc       : Name of the DbContext to use, or generate (if it does not exist).
+  --files|-fi           : List of semicolon separated files to scaffold. Use the --listFiles option to see the available options.
+  --listFiles|-lf       : Lists the files that can be scaffolded by using the '--files' option.
+  --userClass|-u        : Name of the User class to generate.
+  --useSqLite|-sqlite   : Flag to specify if DbContext should use SQLite instead of SQL Server.
+  --force|-f            : Use this option to overwrite existing files.
+  --useDefaultUI|-udui  : Use this option to setup identity and to use Default UI.
+  --layout|-l           : Specify a custom layout file to use.
+  --generateLayout|-gl  : Use this option to generate a new _Layout.cshtml
+  --bootstrapVersion|-b : Specify the bootstrap version. Valid values: '3', '4'. Default is 4.
+
+dotnet aspnet-codegenerator identity -dc UserManagementWithIdentity.Data.ApplicationDbContext 
+    --files "Account.Login;Account.Register;Account.Manage.Index"
+
+//> File List:
+Account._StatusMessage
+Account.AccessDenied
+Account.ConfirmEmail
+Account.ConfirmEmailChange
+Account.ExternalLogin
+Account.ForgotPassword
+Account.ForgotPasswordConfirmation
+Account.Lockout
+Account.Login
+Account.LoginWith2fa
+Account.LoginWithRecoveryCode
+Account.Logout
+Account.Manage._Layout
+Account.Manage._ManageNav
+Account.Manage._StatusMessage
+Account.Manage.ChangePassword
+Account.Manage.DeletePersonalData
+Account.Manage.Disable2fa
+Account.Manage.DownloadPersonalData
+Account.Manage.Email
+Account.Manage.EnableAuthenticator
+Account.Manage.ExternalLogins
+Account.Manage.GenerateRecoveryCodes
+Account.Manage.Index
+Account.Manage.PersonalData
+Account.Manage.ResetAuthenticator
+Account.Manage.SetPassword
+Account.Manage.ShowRecoveryCodes
+Account.Manage.TwoFactorAuthentication
+Account.Register
+Account.RegisterConfirmation
+Account.ResendEmailConfirmation
+Account.ResetPassword
+Account.ResetPasswordConfirmation

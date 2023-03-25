@@ -1,0 +1,10 @@
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Authorization;
+global using System.ComponentModel.DataAnnotations;
+global using UserManagementWithIdentity.Data;
+global using UserManagementWithIdentity.Models;
+global using UserManagementWithIdentity.ViewModels;
+global using Microsoft.AspNetCore.Mvc.ApiExplorer;
